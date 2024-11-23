@@ -1,0 +1,13 @@
+# zchapter instead of chapter so that all
+# chapters are sorted before it.
+JEE/zchapters/*
+/main.*
+!/main.tex
+/texput.log
+/styles/pycompile.log
+/styles/authors.txt
+pdfsrc/__pycache__
+check_pull.txt
+automerge/
+.DS_Store
+GATE-yearwise/years

@@ -1,0 +1,169 @@
+{
+    "latex.root":"GATE-yearwise",
+
+    "latex.jee-root":"GATE-yearwise",    
+
+    "latex.hints.chapter":"\\chapter",
+    "latex.hints.question":"\\question",
+    "latex.hints.solution":"\\solution",
+    "latex.hints.author": "\\author",
+    "latex.hints.section": "\\section",
+
+    "latex.toggles.format": "include-all-post-fi",
+    "latex.toggles.sections": true,
+    "latex.toggles.useFolderNames": false,
+
+    "pdf.chapters" : {
+        "2007" : {
+            "name": "2007",
+            "file": "GATE-yearwise/years/2007.tex"
+        },
+        "2008" : {
+            "name": "2008",
+            "file": "GATE-yearwise/years/2008.tex"
+        },
+        "2009": {
+            "name": "2009",
+            "file": "GATE-yearwise/years/2009.tex"
+        }, 
+        "2010": {
+            "name": "2010",
+            "file": "GATE-yearwise/years/2010.tex"
+        }, 
+        "2011": {
+            "name": "2011",
+            "file": "GATE-yearwise/years/2011.tex"
+        }, 
+        "2012": {
+            "name": "2012",
+            "file": "GATE-yearwise/years/2012.tex"
+        }, 
+        "2013": {
+            "name": "2013",
+            "file": "GATE-yearwise/years/2013.tex"
+        }, 
+        "2014": {
+            "name": "2014",
+            "file": "GATE-yearwise/years/2014.tex"
+        }, 
+        "2015": {
+            "name": "2015",
+            "file": "GATE-yearwise/years/2015.tex"
+        }, 
+        "2016": {
+            "name": "2016",
+            "file": "GATE-yearwise/years/2016.tex"
+        }, 
+        "2017": {
+            "name": "2017",
+            "file": "GATE-yearwise/years/2017.tex"
+        }, 
+        "2018": {
+            "name": "2018",
+            "file": "GATE-yearwise/years/2018.tex"
+        }, 
+        "2019": {
+            "name": "2019",
+            "file": "GATE-yearwise/years/2019.tex"
+        },
+        "2020": {
+            "name": "2020",
+            "file": "GATE-yearwise/years/2020.tex"
+        }, 
+        "2021": {
+            "name": "2021",
+            "file": "GATE-yearwise/years/2021.tex"
+        }, 
+        "2022": {
+            "name": "2022",
+            "file": "GATE-yearwise/years/2022.tex"
+        }, 
+        "2023": {
+            "name": "2023",
+            "file": "GATE-yearwise/years/2023.tex"
+        }, 
+        "2024": {
+            "name": "2024",
+            "file": "GATE-yearwise/years/2024.tex"
+        }
+    },
+
+    "pdf.jee-years" : {
+        "2020": {
+            "name": "2020",
+            "file": "JEE-yearwise/years/2020.tex"
+        }, 
+        "2021": {
+            "name": "2021",
+            "file": "JEE-yearwise/years/2021.tex"
+        }, 
+        "2022": {
+            "name": "2022",
+            "file": "JEE-yearwise/years/2022.tex"
+        }, 
+        "2023": {
+            "name": "2023",
+            "file": "JEE-yearwise/years/2023.tex"
+        }, 
+        "2024": {
+            "name": "2024",
+            "file": "JEE-yearwise/years/2024.tex"
+        }
+    },
+    "pdf.conditions.solved" : [
+        "\\begin{align}",
+        "\\begin{table}",
+        "\\begin{figure}"
+    ],
+    "pdf.conditions.validlatex" : [
+        "\\fi",
+        "\\iffalse"
+    ],
+    "pdf.styles.macro":"\\pdfcsubs",
+    "pdf.styles.chapter":"styles/chapter.tex",
+    "pdf.styles.section":"styles/section.tex",
+    "pdf.styles.question":"styles/question.tex",
+
+    "pdf.sections" : {
+        "ae": {
+            "name": "AE",
+            "keys": ["none"]
+        }, 
+        "ce": {
+            "name": "CE",
+            "keys": ["none"]    
+        }, 
+        "ee": {
+            "name": "EE",
+            "keys": ["none"]
+        }, 
+        "ma": {
+            "name": "MA",
+            "keys": ["none"]
+        }, 
+        "me": {
+            "name": "ME",
+            "keys": ["none"]
+        }, 
+        "ph": {
+            "name": "PH",
+            "keys": ["none"]
+        }, 
+        "st": {
+            "name": "ST",
+            "keys": ["none"]
+        }, 
+        "xe": {
+            "name": "XE",
+            "keys": ["none"]
+        }, 
+        "da": {
+            "name": "DA",
+            "keys": ["none"]
+        }
+    },
+
+    "pdf.skipfile":"styles/skip.txt",
+    "pdf.authorslist":"styles/authors.txt",
+    "pdf.log":"styles/pycompile.log"
+}
