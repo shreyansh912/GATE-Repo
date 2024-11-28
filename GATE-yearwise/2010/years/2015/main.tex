@@ -1,0 +1,313 @@
+\iffalse
+\chapter{2015}
+\author{AI24BTECH11032}
+\section{ee}
+\fi
+    \item  A random variable X has probability density function f$\brak{x}$ as given below:
+\begin{align*}
+    f(x) = 
+    \begin{cases} 
+      a + b x & \text{if } 0 < x < 1, \\
+      0 & \text{otherwise}
+   \end{cases}
+\end{align*}
+If the expected value E$\sbrak{X}=\frac{2}{3},$ then Pr$\sbrak{X<0.5}$ is
+\bigskip
+\item If a continuous function f$\brak{x}$ does not have a root in the interval $\sbrak{a,b}$ then which one of the following statements is TRUE?
+\begin{enumerate}
+    \item $f\brak{a}\cdot f\brak{b}=0$
+    \item $f\brak{a}\cdot f\brak{b}<0$
+    \item $f\brak{a}\cdot f\brak{b}>0$
+    \item $\frac{f\brak{a}} {f\brak{b}}\leq0$
+\end{enumerate}
+\bigskip
+\item If the sum of the diagonal elements of a $2\times2$ matrix is $-6$, then the maximum possible value of determinant of the matrix is $\underline{\hspace{2cm}}.$
+\bigskip
+\item Consider a function $\overrightarrow{f}=\frac{1}{r^{2}}\hat{r}$ where r is the distance from the origin and $\hat{r}$ is the unit vector in the radial direction. The divergence of this function over a sphere of radius R, which includes the origin, is
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $0$
+        \item $2\pi$
+        \item $4\pi$
+        \item R$\pi$
+    \end{enumerate}
+\end{multicols}
+\bigskip
+\item When the Wheatstone bridge shown in the figure is used to find the value of resistor R$_{X}$, the galvanometer G indicates zero current when $R_{1}=50\ohm, R_{2}=65\ohm \text{ and } R_{3}=100\ohm. $ If R$_{3}$ is known with $\pm 5\%$ tolerance on its nominal value of $100\ohm,$ what is the range of R$_{X}$ in Ohms ?
+\begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (2.25,11.75) to[short] (3.5,11.75);
+\draw (2.25,11.75) to[short] (2.25,8);
+\draw (3.5,11.75) to[R] (5.5,13.75);
+\draw (5.5,13.75) to[R] (7.5,11.75);
+\draw (3.5,11.75) to[R] (5.5,9.75);
+\draw (5.5,9.75) to[R] (7.5,11.75);
+\draw (7.5,11.75) to[short] (8.75,11.75);
+\draw (8.75,11.75) to[short] (8.75,8);
+\draw (2.25,8) to[battery1] (8.75,8);
+\node [font=\small] at (5.25,8.25) {+};
+\node [font=\small] at (5.75,8.25) {-};
+\node [font=\small] at (5.5,8.75) {V};
+\node [font=\small] at (4.25,13) {$R_1$};
+\node [font=\small] at (4.25,10.5) {$R_3$};
+\node [font=\small] at (6.75,13) {$R_2$};
+\node [font=\small] at (6.75,10.5) {$R_x$};
+\draw (5.5,13.75) to[short] (5.5,12);
+\draw  (5.5,11.5) circle (0.5cm);
+\draw (5.5,11) to[short] (5.5,9.75);
+\node [font=\small] at (5.5,11.5) {$G$};
+\end{circuitikz}
+}%
+
+\end{figure}
+\begin{enumerate}
+        \item $\sbrak{123.50,136.50}$
+        \item $\sbrak{125.89,134.12}$
+        \item $\sbrak{117.00,143.00}$
+        \item $\sbrak{120.25,139.75}$
+\end{enumerate}
+\bigskip
+\item A $\brak{0-50\text{A}}$ moving coil ammeter has a voltage drop of $0.1$V V across its terminals at full scale deflection. The external shunt resistance $\brak{\text{in milliohms}}$ needed to extend its range to $\brak{0-50\text{A}}$ is $\underline{\hspace{2cm}}.$
+\bigskip
+\item Of the four characteristics given below, which are the major requirements for an instrumentation amplifier? 
+\begin{enumerate}[label=\Alph*]
+    \item[P.] High common mode rejection ratio
+    \item[Q.] High input impedance
+    \item[R.] High linearity
+    \item[S.] High output impedance
+\end{enumerate}
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item P, Q and R only
+        \item P and R only
+        \item P, Q and S only
+        \item Q, R and S only
+    \end{enumerate}
+\end{multicols}
+\bigskip
+\item In the following chopper, the duty ratio of switch S is $0.4$. If the inductor and capacitor are sufficiently large to ensure continuous inductor current and ripple free capacitor voltage, the charging current $\brak{\text{in Ampere}}$ of the $5$V battery, under steady-state,is $\underline{\hspace{2cm}}.$
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (1,12.75) to[american voltage source] (1,7);
+\draw (1,12.75) to[short] (2.75,12.75);
+\draw (2.75,12.75) to[short] (2.75,11.5);
+\draw (3.25,12.75) to[short] (5.75,12.75);
+\draw (3.75,12.75) to[short] (5.75,12.75);
+\draw (4.25,12.75) to[short] (4.25,11.5);
+\draw (2.5,11.5) to[short] (3,11.5);
+\draw (4,11.5) to[short] (4.5,11.5);
+\draw (2.5,11.25) to[short] (3.75,11.25);
+\draw (4.25,11.25) to[short] (4.25,10.25);
+\draw [->, >=Stealth] (3.5,12.75) -- (3.5,11.5);
+\draw [short] (5,18.5) -- (5.25,18.5);
+\draw (3.25,11.5) to[short] (3.75,11.5);
+\draw (3.5,11.25) to[short] (4.25,11.25);
+\draw (5.75,12.75) to[L ] (8,12.75);
+\draw (8,12.75) to[short] (8.75,12.75);
+\draw (1,7) to[short] (8.75,7);
+\draw (8.75,7) to[short] (8.75,7.5);
+\draw (8.75,12.75) to[R] (8.75,9.5);
+\draw (8.75,9.5) to[battery1] (8.75,7.25);
+\draw (7.5,12.75) to[C] (7.5,7);
+\draw (5.5,7) to[D] (5.5,12.75);
+\node [font=\small] at (9.5,11.25) {3\ohm};
+\node [font=\small] at (9,8.75) {+};
+\node [font=\small] at (9.25,8.25) {5V};
+\node [font=\small] at (7,9.75) {C};
+\node [font=\small] at (0.25,9.75) {20V};
+\node [font=\small] at (3,13) {S};
+\node [font=\small] at (6.75,13.25) {L};
+\end{circuitikz}
+}%
+
+\end{figure}
+\bigskip
+\item A moving average function is given by $y\brak{t} = \frac{1}{T} \int_{t-T}^{t} u\brak{\tau} d\tau.$ If the input $\mu$ is a sinusoidal signal of frequency $\frac{1}{2T}$Hz,then in steady state, the output y will lag $\mu$ $\brak{\text{n degree}}$ by $\underline{\hspace{2cm}}.$
+\bigskip
+\item The impulse response g$\brak{\text{t}}$ of a system, G, is as shown in Figure $\brak{\text{a}}$. What is the maximum value attained by the impulse response of two cascaded blocks of G as shown in Figure $\brak{\text{b}}$ ?
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [->, >=Stealth] (4,7.5) -- (4,12.75);
+\draw [->, >=Stealth] (3.75,8) -- (8.25,8);
+\draw [short] (4,10) -- (6.25,10);
+\draw [short] (6.25,10) -- (6.25,8);
+\draw [->, >=Stealth] (3.75,10.75) -- (3.75,11);
+\node [font=\small] at (3.25,10.5) {g$\brak{t}$};
+\node [font=\small] at (3.75,10) {1};
+\node [font=\small] at (3.75,7.75) {0};
+\node [font=\small] at (6.25,7.75) {1};
+\node [font=\small] at (8.5,8) {t};
+\node [font=\small] at (5.75,7.25) {$\brak{a}$};
+\draw  (3.75,5) rectangle (5.75,3.75);
+\draw [->, >=Stealth] (2.5,4.25) -- (3.75,4.25);
+\draw [->, >=Stealth] (5.75,4.25) -- (7,4.25);
+\draw  (7,5) rectangle (9.5,3.75);
+\draw [->, >=Stealth] (9.5,4.25) -- (10.75,4.25);
+\node [font=\small] at (4.75,4.25) {G};
+\node [font=\small] at (8.25,4.25) {G};
+\node [font=\small] at (6.25,3.25) {$\brak{b}$};
+\end{circuitikz}
+}%
+
+
+\end{figure}
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $\frac{2}{3}$
+        \item $\frac{3}{4}$
+        \item $\frac{4}{5}$
+        \item $1$
+    \end{enumerate}
+\end{multicols}
+\bigskip
+\item Consider a one-turn rectangular loop of wire placed in a uniform magnetic field as shown in the figure. The plane of the loop is perpendicular to the field lines. The resistance of the loop is $0.4\ohm,$ and its inductance is negligible. The magnetic flux density $\brak{\text{in Tesla}}$ is a function of time, and is given by B$\brak{t}=0.25\sin\omega t,$ where $\omega=2\pi\times50\frac{radian}{second}.$ The power absorbed $\brak{\text{n Watt}}$ by the loop from the magnetic field is $\underline{\hspace{2cm}}.$
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (2.75,10.75) rectangle (8.75,7.5);
+\draw (9,10.75) to[short] (11,10.75);
+\draw (8.75,11) to[short] (8.75,12.5);
+\draw (2.75,11) to[short] (2.75,12.5);
+\draw [->, >=Stealth] (6,12.5) -- (8.75,12.5);
+\draw [->, >=Stealth] (5.5,12.5) -- (2.75,12.5);
+\draw [->, >=Stealth] (11,9) -- (11,7.5);
+\draw [->, >=Stealth] (11,9.5) -- (11,10.75);
+\draw [short] (9,7.5) -- (11,7.5);
+\draw  (1.75,11.75) circle (0.25cm) node {\small X} ;
+\draw  (1.75,10.25) circle (0.25cm);
+\draw  (1.75,8.25) circle (0.25cm);
+\draw  (1.75,6.75) circle (0.25cm);
+\draw  (3.5,11.75) circle (0.25cm);
+\draw  (5.5,11.75) circle (0.25cm);
+\draw  (7.5,11.75) circle (0.25cm);
+\draw  (3.5,10.25) circle (0.25cm);
+\draw  (5.5,10.25) circle (0.25cm);
+\draw  (7.5,10.25) circle (0.25cm);
+\draw  (3.5,8.25) circle (0.25cm);
+\draw  (5.5,8.25) circle (0.25cm);
+\draw  (7.5,8.25) circle (0.25cm);
+\draw  (3.75,6.75) circle (0.25cm);
+\draw  (5.5,6.75) circle (0.25cm) node {\small X} ;
+\draw  (7.5,6.75) circle (0.25cm);
+\draw  (9.25,11.75) circle (0.25cm);
+\draw  (9.25,10.25) circle (0.25cm);
+\draw  (9.25,8.25) circle (0.25cm);
+\draw  (9.25,6.75) circle (0.25cm);
+\node [font=\normalsize] at (3.5,11.75) {X};
+\node [font=\normalsize] at (5.5,11.75) {X};
+\node [font=\normalsize] at (1.75,10.25) {X};
+\node [font=\normalsize] at (3.5,10.25) {X};
+\node [font=\normalsize] at (5.5,10.25) {X};
+\node [font=\normalsize] at (1.75,8.25) {X};
+\node [font=\normalsize] at (3.5,8.25) {X};
+\node [font=\normalsize] at (5.5,8.25) {X};
+\node [font=\normalsize] at (1.75,6.75) {X};
+\node [font=\normalsize] at (3.75,6.75) {X};
+\node [font=\small] at (7.5,11.75) {X};
+\node [font=\small] at (7.5,10.25) {X};
+\node [font=\small] at (7.5,8.25) {X};
+\node [font=\small] at (7.5,6.75) {X};
+\node [font=\small] at (9.25,11.75) {X};
+\node [font=\small] at (9.25,10.25) {X};
+\node [font=\small] at (9.25,8.25) {X};
+\node [font=\small] at (9.25,6.75) {X};
+\node [font=\small] at (5.75,12.5) {10 cm};
+\node [font=\small] at (11,9.25) {5 cm};
+\end{circuitikz}
+}%
+
+\end{figure}
+\bigskip
+\item A steady current I is flowing in the $-\text{x}$ direction through each of two infinitely long wires at $y = \pm \frac{L}{2}$ as shown in the figure. The permeability of the medium is $\mu_0$ . The $\overrightarrow{B}$-field at $\brak{0,L,0}$ is
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [->, >=Stealth] (6.25,9.25) -- (6.25,13.5);
+\draw (6.25,9.25) to[lamp] (9,9.25);
+\draw (6.25,9.25) to[lamp] (3.75,9.25);
+\draw [->, >=Stealth] (9,9.25) -- (10.5,9.25);
+\draw [->, >=Stealth] (3.75,9.25) -- (1.75,9.25);
+\draw [<->, >=Stealth] (9.25,12.75) -- (3.25,5.75);
+\node [font=\small] at (4.25,8.75) {Current=I};
+\node [font=\small] at (8.25,8.75) {Current=I};
+\node [font=\small] at (10.25,9.5) {y};
+\node [font=\small] at (6,13) {z};
+\node [font=\small] at (3.25,6.25) {x};
+\node [font=\small] at (5,9.75) {{$y = -\frac{L}{2}$}};
+\node [font=\small] at (8.25,9.75) {{$y = \frac{L}{2}$}};
+\node [font=\small] at (6.25,9) {0};
+\end{circuitikz}
+}%
+
+\end{figure}
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $- \frac{4 \mu_0 I}{3 \pi L}\hat{Z}$
+        \item $+ \frac{4 \mu_0 I}{3 \pi L}\hat{Z}$
+        \item $0$
+        \item $- \frac{3 \mu_0 I}{4 \pi L}\hat{Z}$
+    \end{enumerate}
+\end{multicols}
+\bigskip
+\item Consider the circuit shown in the figure. In this circuit R$=1 \text{k}\ohm,$ and C$=1 \mu \text{F}.$ The input voltage is sinusoidal with a frequency of $50$Hz,represented as a phasor with magnitude V$_{i}$ and phase angle $0$  radian as shown in the figure. The output voltage is represented as a phasor with magnitude V$_{o}$ and  phase angle $\delta$ radian . What is the value of the output phase angle $\delta\brak{\text{in radian}}$ relative to the phase
+angle of the input voltage?
+\begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+% Draw resistors and op-amp
+\draw (3.75,11.5) to[R] (8.5,11.5);
+\draw (3.75,11.5) to[short] (3.75,9.75);
+\node at (3.75,9.75) [circ] {};
+\draw (5.25,9.25) node[op amp,scale=1] (opamp2) {};
+\draw (opamp2.+) to[short] (3.75,8.75);
+\draw  (opamp2.-) to[short] (3.75,9.75);
+\draw (6.45,9.25) to[short](6.75,9.25);
+\draw (6.75,9.25) to[short, -o] (10.25,9.25);
+\draw (8.5,11.5) to[short] (8.5,9.25);
+\node at (8.5,9.25) [circ] {};
+\draw (3.75,9.75) to[C] (2.75,9.75);
+\draw (2.75,9.75) to[short, -o] (2.25,9.75);
+\node at (3.75,8.75) [circ] {};
+\draw (3.75,8.75) to[C] (2.75,8.75);
+\draw (2.75,8.75) to[short, -o] (2.25,8.75);
+\draw [->, >=Stealth] (2.25,9) -- (2.25,9.5);
+\draw (3.75,8.75) to[R] (3.75,7);
+\draw (3.75,7) to (3.75,6.75) node[ground]{};
+
+% Labels
+\node [font=\small] at (9.75,9.5) {$v_o = v_o \angle \delta$};
+\node [font=\small] at (4.25,7.75) {$R$};
+\node [font=\small] at (3.25,8.25) {$C$};
+\node [font=\small] at (3.25,10.25) {$C$};
+\node [font=\small] at (6,12) {$R$};
+\node [font=\small] at (1.5,9.25) {$v_i = V_1 \angle \delta$};
+\end{circuitikz}
+} % End of resizebox
+\caption{Circuit diagram with capacitors, resistors, and an op-amp}
+\end{figure}
+
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $0$
+        \item $\pi$
+        \item $\frac{\pi}{2}$
+        \item $-\frac{\pi}{2}$
+    \end{enumerate}
+\end{multicols}
+
+
