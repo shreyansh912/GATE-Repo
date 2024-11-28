@@ -1,0 +1,321 @@
+\iffalse
+\chapter{2023}
+\author{AI24BTECH11032}
+\section{ee}
+\fi
+\item An $8$ bit ADC converts analog voltage in the range of 0 to $+5$ V to the corresponding
+digital code as per the conversion characteristics shown in figure.
+For $V_{in} = 1.9922 V$, which of the following digital output, given in hex, is true ?
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.5,10.75) to[short] (3.5,5.25);
+\draw (3.5,5.25) to[short] (10.5,5.25);
+\draw [ line width=0.9pt](3.5,5.25) to[short] (4,5.25);
+\draw [ line width=0.9pt](4,5.25) to[short] (4,6);
+\draw [ line width=0.9pt](4,6) to[short] (5,6);
+\draw [ line width=0.9pt](5,6) to[short] (5,6.75);
+\draw [ line width=0.9pt](5,6.75) to[short] (5.75,6.75);
+\draw [ line width=0.9pt](5.75,6.75) to[short] (5.75,7.5);
+\draw [ line width=0.9pt](5.75,7.5) to[short] (6.5,7.5);
+\draw [ line width=0.9pt](6.5,7.5) to[short] (6.5,8.25);
+\draw [ line width=0.9pt](6.5,8.25) to[short] (7.25,8.25);
+\draw [ line width=0.9pt](7.25,8.25) to[short] (7.25,9);
+\draw [ line width=0.9pt](7.25,9) to[short] (8,9);
+\draw [line width=0.9pt, ->, >=Stealth, dashed] (3.5,4.25) -- (3.5,5.25);
+\draw [line width=0.9pt, ->, >=Stealth, dashed] (4,4.75) -- (4,5.25);
+\draw [line width=0.9pt, ->, >=Stealth, dashed] (4.5,4.25) -- (4.5,6);
+\draw [line width=0.9pt, ->, >=Stealth, dashed] (5.5,4.25) -- (5.5,6.75);
+\draw [line width=0.9pt, ->, >=Stealth, dashed] (6.25,4.25) -- (6.25,7.5);
+\draw [line width=0.9pt, ->, >=Stealth, dashed] (7,4.25) -- (7,8.25);
+\draw [dashed] (3.5,6) -- (4,6);
+\draw [dashed] (5,6.75) -- (3.5,6.75);
+\draw [dashed] (5.75,7.5) -- (3.5,7.5);
+\draw [dashed] (7.75,5) -- (9.5,5);
+\node [font=\small] at (2.75,9.25) {Digital};
+\node [font=\small] at (2.75,9) {output in};
+\node [font=\small] at (2.5,8.75) {Hex};
+\draw [dashed] (3,8.75) -- (3,8.25);
+\node [font=\small] at (3.25,7.5) {0.3H};
+\node [font=\small] at (3.25,6.75) {02H};
+\node [font=\small] at (3.25,6) {01H};
+\node [font=\small] at (3.25,5.25) {00H};
+\node [font=\small] at (10.25,5) {$V_{in} in mV$};
+\node [font=\small] at (9.5,4.5) {$Analog Input $};
+\node [font=\large] at (3.5,4.75) {0};
+\node [font=\normalsize] at (4,4.5) {9.8};
+\node [font=\normalsize] at (4.5,5) {19.6};
+\node [font=\normalsize] at (5.5,5) {39.2};
+\node [font=\normalsize] at (6.25,5) {58.8};
+\end{circuitikz}
+}%
+\end{figure}
+\begin{enumerate}
+    \item $64$H
+    \item $65$H
+    \item $66$H
+    \item $67$H
+\end{enumerate}
+\bigskip
+\item The three-bus power system shown in the figure has one alternator connected to
+bus $2$ which supplies $200$ MW and $40$ MVAr power. Bus $3$ is infinite bus having a voltage of magnitude $\abs{V_{3}}=1.0$p.u and angle of $-15^{\circ}.$ A variable current source, $\abs{I}\angle\phi$ is connected at bus $1$ and controlled such that the magnitude of the bus $1$
+voltage is maintained at$ 1.05$ p.u. and the phase angle of the source current $\phi=\theta_{1}\pm\frac{\pi}{2},\text{ where }\theta_{1}$ is the phase angle of the bus $1$ voltage. The three buses can be categorized for load flow analysis as
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+
+% Main vertical lines
+\draw [line width=0.9pt] (2.5,11) -- (2.5,5.75);
+\draw [line width=0.9pt] (12.75,11) -- (12.75,5.75);
+
+% Inductors
+\draw [line width=0.9pt] (2.5,10.5) to[L=$j0.4$] (12.75,10.5);
+\draw [line width=0.9pt] (2.5,6) to[L=$j0.3$] (6.75,6);
+\draw [line width=0.9pt] (6.75,6) to[L=$j0.3$] (12.75,6);
+
+% Voltage Source and Arrows
+\draw [line width=0.5pt] (2.5,8) to[sinusoidal voltage source, sources/symbol/rotate=auto] (0,8);
+\draw [line width=0.5pt, ->, >=Stealth] (1.25,8.75) -- (2.25,8.75);
+
+% Current source and connections
+\draw [line width=0.5pt] (7.5,6.5) -- (7.5,5.25);
+\draw [line width=0.5pt] (7.5,5.5) -- (8,5.5) -- (8,4.75);
+\draw [line width=0.5pt] (8,4.5) circle (0.25cm); % Controlled current source
+\draw [line width=0.5pt, ->, >=Stealth] (8,4.5) -- (8,4.75);
+\draw [line width=0.5pt] (7.25,4) -- (7.75,4.5);
+\draw [line width=0.5pt] (8,4.25) -- (8,4) node[ground]{};
+\draw [line width=0.5pt, ->, >=Stealth] (8,4.75) -- (8.5,5.25);
+
+% Infinite bus and connections
+\draw [line width=0.5pt] (12.75,8) -- (14,8);
+\draw [line width=0.5pt] (14.5,8) circle (0.5cm); % Infinite bus symbol
+
+% Nodes
+\draw [line width=0.5pt] (2.5,11.75) circle (0.25cm); % Node 2
+\draw [line width=0.5pt] (12.5,11.75) circle (0.25cm); % Node 3
+\draw [line width=0.5pt] (7.5,7) circle (0.25cm); % Node 1
+
+% Labels
+\node [font=\small] at (0.75,10.25) {$P_2=200\, \text{MW}$};
+\node [font=\small] at (0.75,9.75) {$Q_2=40\, \text{MVAr}$};
+\node [font=\small] at (0.5,7) {Alternator};
+\node [font=\small] at (1,6) {$|V_{2}|\angle\theta$};
+\node [font=\small] at (5.25,4.5) {Controlled};
+\node [font=\small] at (5,4.25) {Current};
+\node [font=\small] at (5,4) {Source};
+\node [font=\small] at (7.25,7.75) {$V_{1}=1.05\angle\theta_{1}$};
+\node [font=\small] at (7.5,7) {1};
+\node [font=\small] at (2.5,11.75) {2};
+\node [font=\small] at (12.5,11.75) {3};
+\node [font=\small] at (13.5,6.75) {Infinite Bus};
+\node [font=\small] at (14.25,9.25) {$|V_{3}|\angle\theta_{3}$ =};
+\node [font=\small] at (14.25,9) {$1.0\angle-15^{\circ}$};
+\node [font=\small] at (9.25,4.75) {$|\mathbf{I}|\angle\phi$};
+\node [font=\small] at (9.75,4.25) {where $\phi=\theta_{1}\pm \frac{\pi}{2}$};
+
+\end{circuitikz}
+}
+\end{figure}
+
+\begin{enumerate}
+    \item Bus 1  Slack bus\\ Bus 2  $P-\abs{V}\text{ bus }$\\Bus 3  $P-Q \text{ bus }$
+    \item Bus 1  $P-\abs{V}\text{ bus }$\\Bus 2  $P-\abs{V}\text{ bus }$\\Bus 3  Slack bus
+    \item Bus 3  $P-Q \text{ bus }$\\Bus 2  $P-Q \text{ bus }$\\Bus 3  Slack bus
+    \item Bus 1  $P-\abs{V}\text{ bus }$\\Bus 2  $P-Q \text{ bus }$\\Bus 3  Slack bus
+\end{enumerate}
+\bigskip
+\item Consider the following equation in a 2-D real-space.\\
+$\abs{x_{1}}^{p}+\abs{x_{2}}^{p}=1\text{ for } p>0$\\
+Which of the following statement$\brak{\text{ s }}$ is/are true.
+\begin{enumerate}
+    \item When $p = 2$, the area enclosed by the curve is $\pi.$
+    \item When p tends to$\infty$ the area enclosed by the curve tends to $4$.
+    \item When p tends to $0,$ the area enclosed by the curve is$ 1.$
+    \item When $p = 2$, the area enclosed by the curve is $2.$
+\end{enumerate}
+\bigskip
+\item In the figure , the electric field E and the magnetic field B point to x and z directions, respectively  and have constant magnitude . A positive charges 'q' is released  from  rest at the origin. Which of the following statement$\brak{\text{ s }}$ is/are true
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [line width=0.5pt, ->, >=Stealth] (3,9) -- (1.25,5.25);
+\draw [line width=0.5pt, ->, >=Stealth] (3,9) -- (10.75,9);
+\draw [line width=0.5pt, ->, >=Stealth] (3,9) -- (3,12.75);
+\draw [line width=1.2pt, ->, >=Stealth] (3.5,10.5) -- (3.5,11.75);
+\draw [line width=1.2pt, ->, >=Stealth] (3,8) -- (2.5,7);
+\node [font=\small] at (2.5,11.75) {z};
+\node [font=\small] at (4,11) {E};
+\node [font=\small] at (1.25,6.5) {x};
+\node [font=\small] at (3,7.5) {B};
+\node [font=\small] at (3.25,8.75) {q};
+\node [font=\small] at (10.25,8.75) {y};
+\end{circuitikz}
+}%
+
+\end{figure}
+\begin{enumerate}
+    \item The charge will move in the direction of z with constant velocity.
+    \item The charge will always move on the y-z plane only.
+    \item The trajectory of the charge will be a circle.
+    \item The charge will progress in the direction of y.
+\end{enumerate}
+\bigskip
+\item All the elements in the circuit shown in the following figure are ideal. Which of the
+following statements is/are true?
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [ line width=1.2pt](1.5,11) to[american current source] (4.5,11);
+\draw (1.5,11) to[battery2] (1.5,7.25);
+\draw [ line width=1.2pt](4.5,11) to[D] (9.5,11);
+\draw (9.5,11) to[battery2] (9.5,7.25);
+\draw [ line width=1.2pt](9.5,11) to[american current source] (13,11);
+\draw [ line width=1.2pt](13,11) to[D] (16.75,11);
+\draw (16.75,11) to[battery2] (16.75,7.25);
+\draw [ line width=1.2pt](1.5,7.25) to[short] (16.75,7.25);
+\draw [ line width=1.2pt](13.25,11) to[short, -o] (13.25,9.5) ;
+\draw [ line width=1.2pt](13.25,7.25) to[short, -o] (13.25,8.75) ;
+\draw [ line width=0.6pt](13.25,9.5) to[short] (13.75,9);
+\draw [ line width=0.6pt](5.25,11) to[short] (5.25,13);
+\draw [ line width=0.6pt](5.25,13) to[D] (13.25,13);
+\draw [ line width=0.6pt](13.25,13) to[short] (13.25,11);
+\node [font=\small] at (16.5,9.5) {+};
+\node [font=\normalsize] at (9.25,9.5) {+};
+\node [font=\normalsize] at (1.25,9.5) {+};
+\node [font=\large] at (10.25,9) {20 V};
+\node [font=\large] at (7,10.5) {D${_2}$};
+\node [font=\large] at (3,11.75) {4 A, DC};
+\node [font=\large] at (9.25,13.75) {D${_1}$};
+\node [font=\large] at (11.25,11.75) {2 A,DC};
+\node [font=\large] at (15,11.5) {D${_3}$};
+\node [font=\large] at (17.25,9.5) {40 V};
+\node [font=\large] at (13,9) {S};
+\node [font=\large] at (0.75,9) {10 V};
+\end{circuitikz}
+}%
+
+\end{figure}
+\begin{enumerate}
+    \item When switch S is ON, both $D_{1} \text{ and } D_{2} $conducts and $D_{3}$ is reverse biased
+    \item When switch S is ON, $D_{1}$ conducts and both $D_{1} \text{ and } D_{2} $ are reverse biased
+    \item When switch S is OFF,$D_{1}$ is reverse biased and both $D_{1} \text{ and } D_{2} $  conduct
+    \item When switch S is OFF, $D_{1}$ conducts, $D_{2}$ is reverse biased and $D_{3}$ conducts
+\end{enumerate}
+\bigskip
+\item The expected number of trails for first occurrence  of a $" \text{ head }"$ in a biased coin is known to be $4.$ The probability of first occurrence of a $" \text{ head }"$ in the second trial is $\underline{\hspace{2cm}}.\brak{\text{ Round off to three decimal places}}$
+\bigskip
+\item Consider the state-space description of an LTI system with matrices
+\begin{align*}
+    A = \begin{bmatrix}
+0 & 1 \\
+-1 & -2 \\
+\end{bmatrix}, \quad
+B = \begin{bmatrix}
+0 \\
+1 \\
+\end{bmatrix}, \quad
+C = \begin{bmatrix}
+3 & -2 \\
+\end{bmatrix}, \quad
+D = 1
+\end{align*}
+for the input $\sin\brak{\omega t},\omega>0$ the value of$\omega$ for which the steady-state output of the system will be zero, is $\underline{\hspace{2cm}}.\brak{\text{ Round off to the nearest integer}}$
+\bigskip
+\item A three-phase synchronous motor with synchronous impedance of $0.1+j0.3$ per unit per phase has a static stability limit of $2.5$ per unit. The corresponding excitation voltage in per unit is $\underline{\hspace{2cm}}.\brak{\text{ Round off to two decimal place}}$
+\bigskip
+\item A three phase $415 \text{ V }, 50 \text{ Hz }, 6-\text{ pole }, 960 \text{ RPM }, 4 \text{ HP }$ squirrel cage induction motor drives a constant torque load at rated speed operating from rated supply and delivering rated output. If the supply voltage and frequency are reduced by $20\%,$ the resultant speed of the motor in RPM
+$\brak{\text{ neglecting the stator leakage impedance and rotational losses}}$ is
+$\underline{\hspace{2cm}}.\brak{\text{ Round off to the nearest integer}}$
+\bigskip
+\item The period of the discrete-time signal x$\sbrak{n}$ described by the equation below is N $=\underline{\hspace{2cm}}.\brak{\text{ Round off to the nearest integer}}$
+\begin{align*}
+    x\sbrak{n}=1+3\sin\brak{\frac{15\pi}{8}n+\frac{3\pi}{4}}-5\sin\brak{\frac{\pi}{3}n-\frac{\pi}{4}}
+\end{align*}
+\bigskip
+\item The discrete-time Fourier transform of a signal x$\sbrak{n}$ is X$\brak{\ohm}=\brak{1+\cos\ohm}e^{-j\ohm}$. Consider that x$x_{p}\sbrak{n}$ is a periodic signal of period N$=5$ such that 
+\begin{align*}
+    x_{n}\sbrak{n}=x\sbrak{n},\text{ for } n=0,1,2\\
+    =0,\text{ for } n=3,4
+\end{align*}
+Note that $x_{p}\sbrak{n}=\sum_{k=0}^{N-1}\alpha_{k}e^{j^{\frac{2\pi}{N}kn}}.$ The magnitude of the Fourier series coefficient $\alpha_{3}$ is $=\underline{\hspace{2cm}}.\brak{\text{ Round off to three decimal places}}$
+\bigskip
+\item For the circuit shown, if $i=\sin1000t,$ the instantaneous value of the Thevenin's equivalent voltage $\brak{\text{ in Volts }}$ across the terminals $a-b$ at time $t=5$ is $=\underline{\hspace{2cm}}.\brak{\text{ Round off to two decimal places}}$
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [ line width=0.6pt](2.5,11.75) to[american controlled voltage source] (12.75,11.75);
+\draw [ line width=0.6pt](12.75,11.75) to[short] (12.75,10);
+\draw [ line width=0.6pt ] (12.75,9.5) circle (0.5cm);
+\draw [ line width=0.6pt](12.75,9) to[short] (12.75,7.25);
+\draw [ line width=0.6pt](12.75,7.25) to[short] (2.75,7.25);
+\draw [line width=0.6pt, ->, >=Stealth] (12.75,9) -- (12.75,9.75);
+\draw [ line width=0.6pt](10,11.75) to[R] (10,9.25);
+\draw [line width=0.6pt](10,9.25) to[L ] (10,7.25);
+\draw [ line width=0.6pt](5.75,11.75) to[R] (5.75,9.25);
+\draw [line width=0.6pt](5.75,9.25) to[curved capacitor] (5.75,7.25);
+\node [font=\large] at (2,11.75) {a};
+\node [font=\large] at (2.25,7.25) {b};
+\node [font=\large] at (5,10.5) {10$\ohm$};
+\node [font=\large] at (4.75,8.25) {$-j 10\ohm$};
+\node [font=\large] at (8.75,8.25) {j 10$\ohm$};
+\node [font=\large] at (9,10.25) {10$\ohm$};
+\node [font=\large] at (14.5,9.5) {i=$\sin1000t$};
+\node [font=\large] at (6.75,12.25) {4$i{_x}$};
+\node [font=\large] at (6.75,10.25) {i${_x}$};
+\draw [line width=0.6pt, ->, >=Stealth] (6.25,11) -- (6.25,9.5);
+\end{circuitikz}
+}%
+\end{figure}
+\bigskip
+\item The admittance parameters of the passive resistive two-port network shown in the figure are
+\begin{align*}
+    y_{11}=5S,y_{22}=1,y_{12}=y_{21}=-2.5S
+\end{align*} 
+The power delivered to the load resistor R$_{L}$ in Watt is $=\underline{\hspace{2cm}}.\brak{\text{ Round off to two decimal places}}$
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [ line width=0.6pt ] (5.75,11.25) rectangle (8.75,9.25);
+\draw [ line width=0.6pt](2.25,11) to[short] (5.75,11);
+\draw [ line width=0.6pt](8.75,11) to[short] (11.5,11);
+\draw (2.25,11) to[battery ] (2.25,7.25);
+\draw [ line width=1.2pt](11.5,11) to[R] (11.5,7.25);
+\draw [ line width=1.2pt](2.25,7.25) to[short] (11.5,7.25);
+\draw [ line width=1.2pt](4,11) to[short] (4,12.75);
+\draw [ line width=1.2pt](10.25,11) to[short] (10.25,12.75);
+\draw [ line width=1.2pt](4,12.75) to[R] (10.25,12.75);
+\draw [ line width=1.2pt](7.25,9.25) to[short] (7.25,7.25);
+\node at (7.25,7.25) [circ] {};
+\node at (4.75,11) [circ] {};
+\node at (9.5,11) [circ] {};
+\node [font=\large] at (12.25,9.5) {R${_L}=$};
+\node [font=\large] at (12.5,9) {6$\ohm$};
+\node [font=\large] at (1.25,9.25) {20 V};
+\node [font=\large] at (7,10.75) {Resistive};
+\node [font=\large] at (7,10.25) {Two-port};
+\node [font=\large] at (7,9.75) {Network};
+\node [font=\large] at (4.75,10.75) {1};
+\node [font=\large] at (9.5,10.75) {2};
+\node [font=\large] at (7,12) {3$\ohm$};
+\node [font=\large] at (7.25,6.75) {$1^{\prime}
+,2^{\prime}$};
+\end{circuitikz}
+}%
+
+\end{figure}
+
+
+
